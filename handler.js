@@ -16,8 +16,6 @@ module.exports.hello = (event, context, callback) => {
 };
 
 
-
-
 var AWS = require("aws-sdk");
 var IM = require('imagemagick');
 var FS = require('fs');
@@ -40,7 +38,7 @@ module.exports.s3uploadTriggered = (event, context, callback) => {
         if (err) {
             console.log(err, err.stack);
         } else {
-            console.log("S3 object retrieval get successful.");
+            console.log("S3 object retrieval get successful!.");
             var resizedFileName = "/tmp/" + objectKey;
             var quality;
             if (resizedFileName.toLowerCase().includes("png")){
