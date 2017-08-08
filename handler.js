@@ -16,6 +16,9 @@ module.exports.hello = (event, context, callback) => {
   // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event });
 };
 
+
+
+
 var AWS = require("aws-sdk");
 var IM = require('imagemagick');
 var FS = require('fs');
